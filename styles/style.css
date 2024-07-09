@@ -1,0 +1,34 @@
+
+
+.contenido-texto {
+    display: flex;
+    gap: 24px;
+}
+
+#texto {
+    width: 577px;
+    line-height: 150%;
+}
+
+#texto::placeholder {
+    color: #0A3871;
+    font-size: 32px;
+}
+
+.botones {
+    width: 328px;
+    padding: 24px 24px;
+    background-color: #000300;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+  }
+
+  .botones:hover {
+    background-color: #0A3871;
+  }
+
+  .botones:active {
+    background-color: #000300;
+  }
