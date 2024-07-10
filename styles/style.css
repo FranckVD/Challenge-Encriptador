@@ -1,6 +1,32 @@
 
+body {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
 
-.contenido-texto {
+.general {
+  display: flex;
+  align-items: center;
+  padding: 6% 15%;
+  justify-content: space-between;
+  gap: 82px;
+}
+
+.presentacion_logo {
+ position: relative;
+ top: 80px;
+ left: 50px;
+}
+
+.contenido-entrada {
+  float: left;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.contenido-btn {
     display: flex;
     gap: 24px;
 }
@@ -8,11 +34,14 @@
 #texto {
     width: 577px;
     line-height: 150%;
+    font-weight: 400;
+    font-size: 32px;
+    padding: 10px;
+    border: none;
 }
 
 #texto::placeholder {
     color: #0A3871;
-    font-size: 32px;
 }
 
 .botones {
@@ -25,10 +54,81 @@
     cursor: pointer;
   }
 
-  .botones:hover {
+.botones:hover {
     background-color: #0A3871;
   }
 
-  .botones:active {
+.botones:active {
     background-color: #000300;
   }
+
+.presentacion_muñeco {
+  width: 336px;
+  height: 304px;
+}
+
+.contenido-texto {
+  width: 336px;
+  height: 122px;
+  justify-content: center;
+}
+
+.contenido-salida {
+  float: left;
+  width: 50%;
+  height: 944px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16;
+  padding: 1.5rem;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow:  20px 20px 60px #bebebe,
+              -20px -20px 60px #ffffff;
+}
+
+.mensaje {
+  font-size: 24px;
+  font-style: italic;
+  color: #000300;
+  font-weight: bold;
+  word-wrap: break-word;
+  text-align: center;
+  line-height: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.mensaje-aviso {
+  font-size: 16px;
+  font-style: italic;
+  color: #888;
+  border: none;
+  width: 336px;
+  text-align: center;
+  line-height: 1.3rem;
+  padding: 0;
+
+}
+
+
+.footer {
+  padding: 24px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  transform: translateZ(0);
+}
+
+.frase_footer {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}

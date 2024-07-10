@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,24 +8,31 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+    <header>
+        <img class="presentacion_logo" src="./assets/imagenes/Logo-a.png" alt="Logo de letra a">
+    </header>
     <main class="general">
-        <img class="presentación_logo" src="./assets/imagenes/Logo-a.png" alt="Logo de letra a">
-        <section class="general-contenido">
-            <div class="contenido-texto">
-                <textarea name="textarea" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+ 
+        <section class="contenido-entrada">
+            <textarea name="textarea" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
 
-                <button class="botones">Ecriptar</button>
+            <div class="contenido-btn">
+                <button class="botones">Encriptar</button>
                 <button class="botones">Desencriptar</button>
             </div>
 
+        </section>
+        <section class="contenido-salida">
+            <img class="presentación_muñeco" src="./assets/imagenes/Muñeco.png" alt="logo del muñeco de alura">
             <div class="contenido-texto">
-
+                <p class="mensaje">Ningún mensaje fue encontrado</p>
+                <p class="mensaje-aviso">Ingresa el texto que desees encriptar o desencriptar</p>
             </div>
         </section>
-        <img class="presentación_muñeco" src="./assets/imagenes/Muñeco.png" alt="">
+
     </main>
     <footer class="footer">
-        <p>DESARROLLADO POR FRANCK - ORACLE & ALURA LATAM G7</p>
+        <p class="frase_footer">DESARROLLADO POR FRANCK - ORACLE & ALURA LATAM G7</p>
     </footer>
 </body>
 </html>
