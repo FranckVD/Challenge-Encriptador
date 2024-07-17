@@ -7,14 +7,13 @@ body {
 .general {
   display: flex;
   align-items: center;
-  padding: 6% 15%;
+  padding: 0% 15%;
   justify-content: space-between;
-  gap: 82px;
 }
 
 .presentacion_logo {
  position: relative;
- top: 80px;
+ top: 40px;
  left: 50px;
 }
 
@@ -26,13 +25,38 @@ body {
   gap: 32px;
 }
 
+.alert-container {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.alert-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #495057; /* Color plomo */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+span {
+  color: #495057;
+}
+
 .contenido-btn {
     display: flex;
     gap: 24px;
+    margin-top: 180px;
 }
 
 #texto {
-    width: 577px;
+    width: 625px;
     line-height: 150%;
     font-weight: 400;
     font-size: 32px;
@@ -75,13 +99,13 @@ body {
 
 .contenido-salida {
   float: left;
-  width: 50%;
+  width: 400px;
   height: 944px;
+  font-weight: 400;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 16;
   padding: 1.5rem;
   border-radius: 50px;
   background: #e0e0e0;
@@ -103,7 +127,7 @@ body {
 .mensaje-aviso {
   font-size: 16px;
   font-style: italic;
-  color: #888;
+  color: #495057;
   border: none;
   width: 336px;
   text-align: center;
@@ -118,10 +142,8 @@ body {
   text-align: center;
   font-size: 1rem;
   font-weight: 400;
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  transform: translateZ(0);
+
 }
 
 .frase_footer {

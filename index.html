@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Website icon" type="png" href="./assets/imagenes/Logo-a.png">
     <title>Encriptador-Challenge</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
@@ -15,12 +16,14 @@
  
         <section class="contenido-entrada">
             <textarea name="textarea" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-
+            <div class="alert-container">
+                <div class="alert-icon">!</div>
+                <span>Solo letras minúsculas y sin acentos.</span>
+            </div>
             <div class="contenido-btn">
                 <button class="botones">Encriptar</button>
                 <button class="botones">Desencriptar</button>
             </div>
-
         </section>
         <section class="contenido-salida">
             <img class="presentación_muñeco" src="./assets/imagenes/Muñeco.png" alt="logo del muñeco de alura">
