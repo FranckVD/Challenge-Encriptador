@@ -7,6 +7,7 @@
     <title>Encriptador-Challenge</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
+    
 </head>
 <body>
     <header>
@@ -21,13 +22,15 @@
                 <span>Solo letras minúsculas y sin acentos.</span>
             </div>
             <div class="contenido-btn">
-                <button class="botones">Encriptar</button>
-                <button class="botones">Desencriptar</button>
+                <button class="botones" onclick="encriptar()">Encriptar</button>
+                <button class="botones" onclick="desencriptar()">Desencriptar</button>
             </div>
         </section>
         <section class="contenido-salida">
             <img class="presentación_muñeco" src="./assets/imagenes/Muñeco.png" alt="logo del muñeco de alura">
             <div class="contenido-texto">
+                <textarea id="texto-salida" cols="30" rows="10" readonly></textarea>
+                <button class="botones" onclick="copiarTexto()" style="display: none;">Copiar</button>
                 <p class="mensaje">Ningún mensaje fue encontrado</p>
                 <p class="mensaje-aviso">Ingresa el texto que desees encriptar o desencriptar</p>
             </div>
@@ -37,5 +40,6 @@
     <footer class="footer">
         <p class="frase_footer">DESARROLLADO POR FRANCK - ORACLE & ALURA LATAM G7</p>
     </footer>
+    <script src="./app.js"></script>
 </body>
 </html>

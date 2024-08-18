@@ -15,6 +15,7 @@ body {
  position: relative;
  top: 40px;
  left: 50px;
+ height: auto;
 }
 
 .contenido-entrada {
@@ -52,7 +53,7 @@ span {
 .contenido-btn {
     display: flex;
     gap: 24px;
-    margin-top: 180px;
+
 }
 
 #texto {
@@ -62,6 +63,8 @@ span {
     font-size: 32px;
     padding: 10px;
     border: none;
+    resize: none;
+    margin-bottom: 150px;
 }
 
 #texto::placeholder {
@@ -112,6 +115,29 @@ span {
   box-shadow:  20px 20px 60px #bebebe,
               -20px -20px 60px #ffffff;
 }
+
+#texto-salida {
+  width: 100%;
+  line-height: 150%;
+  font-weight: 400;
+  font-size: 32px;
+  padding: 10px;
+  border: none;
+  background-color:#e0e0e0;
+  resize: none;
+  display: none;
+  margin-top: -370px;
+  height: 738px;
+}
+
+#texto-salida::placeholder {
+  color: #0A3871;
+}
+
+.contenido-texto .botones {
+  margin-top: 10px;
+}
+
 
 .mensaje {
   font-size: 24px;
